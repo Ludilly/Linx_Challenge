@@ -12,7 +12,7 @@
     <h1 class="header-title1">uma seleção de produtos</h1>
     <h2 class="header-title2">especial para você</h2>
     <p class="header-title3">Todos os produtos desta lista foram delecionados a partir de sua navegação. Aproveite!</p>
-    <div>
+    <div >
       <button type="button" class="header-button">Conheça a Linx</button>
       <button type="button" class="header-button">Ajude o algoritimo</button>
       <button type="button"class="header-button">Seus produtos</button>
@@ -20,32 +20,39 @@
     </div>
   </header>
   <main>
-      <h2>Ajude o algorítimo a ser mais certeiro</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic nobis a veniam quibusdam alias in! Provident officiis quasi consectetur maiores, sapiente adipisci quas similique, placeat consequatur itaque dignissimos sit. Ea.</p>
-    <form>
-      <label for="name">
-        Seu nome:
+    <section class="section-newsletter">
+      <div class="main-content-text">
+        <h2 class="page-title">Ajude o algorítimo a ser mais certeiro</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic nobis a veniam quibusdam alias in! Provident officiis quasi consectetur maiores, sapiente adipisci quas similique, placeat consequatur itaque dignissimos sit. Ea.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic nobis a veniam quibusdam alias in! Provident officiis quasi consectetur maiores, sapiente adipisci quas similique, placeat consequatur itaque dignissimos sit. Ea.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic nobis a veniam quibusdam alias in! Provident officiis quasi consectetur maiores, sapiente adipisci quas similique, placeat consequatur itaque dignissimos sit. Ea.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic nobis a veniam quibusdam alias in! Provident officiis quasi consectetur maiores, sapiente adipisci quas similique, placeat consequatur itaque dignissimos sit. Ea.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic nobis a veniam quibusdam alias in! Provident officiis quasi consectetur maiores, sapiente adipisci quas similique, placeat consequatur itaque dignissimos sit. Ea.</p>
+      </div>
+      <form class="newsletter-form">
+        <label for="name">
+          Seu nome:
+        </label>
         <input type="text" name="name" id="name" required>
-      </label>
-      <label for="email">
-        E-mail:
+        <label for="email">
+          E-mail:
+        </label>
         <input type="email" name="email" id="email" required>
-      </label>
-      <label for="cpf">
-        CPF:
+        <label for="cpf">
+          CPF:
+        </label>
         <input type="text" name="cpf" id="cpf" required>
-      </label>
-      <label><input type="radio" class="genre" value="male" name="genre" required/>Masculino</label>
-      <label><input type="radio" class="genre" value="female" name="genre" required/>Feminino</label>
-      <button type="submit">Enviar</button>
-    </form>
+        <div class="genre">
+          <label><input type="radio" value="male" name="genre" required/>Masculino</label>
+          <label><input type="radio" value="female" name="genre" required/>Feminino</label>
+        </div>
+        <button type="submit" id="newsletter-button">Enviar</button>
+      </form>
+    </section>
     <div class="first-line">
       <div class="line"></div>
         <h3 class="your-selection">Sua seleção especial</h3>
       <div class="line"></div>
     </div>
-    <div> REQUISIÇÃO DA API</div>
-    <button type="button">Ainda mais produtos aqui!</button>
+    <section class="products-session" id="api"></section>
+    <button type="button" id="more-products-btn">Ainda mais produtos aqui!</button>
     <div class="second-line">
       <div class="line"></div>
         <h3 class="your-selection">Compartilhe a novidade</h3>
