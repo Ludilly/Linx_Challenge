@@ -3,6 +3,10 @@
   margin: 0px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .header {
   align-items: center;
   background: #707070;

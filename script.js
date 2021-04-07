@@ -57,25 +57,23 @@ function moreProductsButton() {
 }
 
 function validationForm() {
-  const cpf = document.getElementById('cpf');
-  const email = document.getElementById('email');
+  const friendEmail = document.getElementById('friend-email');
 
-  const defaultEmail = 'tryber@test.com';
-  const defaultcpf = '12345678900';
+  const reGex = /\S+@\S+\.\S+/;
 
-  if (cpf.value === defaultcpf && email.value === defaultEmail) {
+  if (reGex.test(friendEmail.value)) {
     alert('Cadastro realizado com sucesso!');
   } else {
-    alert('Email ou CPF inválidos');
+    alert('Email não é válido!');
   }
-
-  cpf.value = '';
-  email.value = '';
+  friendEmail.value = '';
 }
 
 function onClickFormButton() {
-  const loginBtn = document.getElementById('newsletter-button');
-  loginBtn.addEventListener('click', validationForm);
+  const submitBtn = document.getElementById('newsletter-button');
+  const newsletter = document.getElementById('footer-submit');
+  submitBtn.addEventListener('click', validationForm);
+  newsletter.addEventListener('click', validationForm);
 }
 
 window.onload = function onload() {
