@@ -40,7 +40,6 @@ header:after {
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
-  margin-left: 150px;
 }
 
 .header-title2 {
@@ -49,7 +48,6 @@ header:after {
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
-  margin-left: 150px;
 }
 
 .header-title3 {
@@ -58,7 +56,6 @@ header:after {
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
-  margin-left: 150px;
 }
 
 .header-button {
@@ -82,6 +79,7 @@ main {
   font: normal normal normal 12px/18px Helvetica Neue;
   display: flex;
   justify-content: center;
+  margin-bottom: 100px;
 }
 
 .page-title {
@@ -104,22 +102,40 @@ main {
   justify-content: space-between;
   margin-right: 30px;
   margin-top: 50px;
+  margin-bottom: 60px;
 }
 
 .newsletter-form label {
   margin-bottom: -2px;
+  padding: 5px;
+  text-align: left;
+  font: normal normal normal 12px/14px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #888888;
+}
+
+.newsletter-form input, .newsletter-form button {
+  padding: 5px;
 }
 
 .newsletter-form button {
   margin-top: 15px;
+  text-align: center;
+  font: normal normal normal 16px/16px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #888888;
+  width: 340px;
 }
 
 .genre {
   align-items: flex-start;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   margin-top: 10px;
+  text-align: left;
+  font: normal normal normal 12px/14px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #888888;
 }
 
 .first-line {
@@ -161,6 +177,12 @@ main {
 .item__add{
   width: 200px;
   height: 30px;
+  text-align: center;
+  font: normal normal normal 16px/16px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #888888;
+  height: 30px;
+  width: 200px;
 }
 
 span {
@@ -185,17 +207,80 @@ strong {
   color: #888888;
 }
 
+.more-products-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 49px;
+  margin-bottom: 125px;
+}
+
+.more-products-button button {
+  text-align: center;
+  font: normal normal normal 16px/16px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #888888;
+  padding: 10px;
+  width: 260px;
+  height: 39px;
+}
+
+.personalized-list {
+  color: #888888;
+  font: normal normal normal 14px/16px Helvetica Neue;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.personalized-list p {
+  margin-bottom: 39px;
+}
+
+.form-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.form-horizontal label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -2px;
+  padding: 5px;
+  text-align: left;
+  font: normal normal normal 12px/14px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #888888;
+}
+
+.form-horizontal input {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  width: 340px;
+  height: 30px;
+}
+
+.form-horizontal-btn button{
+  margin-top: 15px;
+  text-align: center;
+  font: normal normal normal 16px/16px Helvetica Neue;
+  color: #888888;
+  width: 260px;
+  height: 39px;
+  margin-bottom: 71px;
+  margin-top: 61px;
+}
+
 .footer {
   color: #ffffff;
-  width: 100%;
   font: normal normal normal 12px/18px Helvetica Neue;
-  height: 110px;
+  height: 150px;
   background: #707070;
   border: 1px solid #707070;
   opacity: 1;
   margin-top: 100px;
   text-align: center;
   position: relative;
+  width: 100%;
 }
 
 footer:after {
@@ -209,4 +294,8 @@ footer:after {
   transform-origin: top right;
   transform: skewY(-1.8deg);
   z-index: -1;
+}
+
+.footer div {
+  margin-top: 80px;
 }

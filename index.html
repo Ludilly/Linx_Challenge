@@ -52,29 +52,39 @@
       <div class="line"></div>
     </div>
     <section class="products-session" id="api"></section>
-    <button type="button" id="more-products-btn">Ainda mais produtos aqui!</button>
+    <div class="more-products-button">
+      <button type="button" id="more-products-btn">Ainda mais produtos aqui!</button>
+    </div>
     <div class="second-line">
       <div class="line"></div>
         <h3 class="your-selection">Compartilhe a novidade</h3>
       <div class="line"></div>
     </div>
-    <p>Quer que seus amigos também granhem a lista personalizada deles? Preencha agora!</p>
-    <form>
-      <label for="friend-name">
-        Nome do seu amigo:
-        <input type="text" name="friend-name" id="friend-name" required>
-      </label>
-      <label for="friend-email">
-        E-mail:
-        <input type="email" name="friend-email" id="friend-email" required>
-      </label>
-      <button type="submit">Enviar agora</button>
-    </form>
+    <section class="personalized-list">
+      <div>
+        <p>Quer que seus amigos também granhem a lista personalizada deles? Preencha agora!</p>
+      </div>
+      <form class="form-horizontal">
+        <label for="friend-name">
+          Nome do seu amigo:
+          <input type="text" name="friend-name" id="friend-name">
+        </label>
+        <label for="friend-email">
+          E-mail:
+          <input type="email" name="friend-email" id="friend-email">
+        </label>
+      </form>
+      <div class="form-horizontal-btn">
+        <button type="submit">Enviar agora</button>
+      </div>
+    </section>
   </main>
   <footer class="footer">
-    <p>Testando suas habilidades em HTML, CSS e JS.</p>
-    <p>Linx Impulse</p>
-    <p>2019</p>
+    <div class="footer-paragraph">
+      <p>Testando suas habilidades em HTML, CSS e JS.</p>
+      <p>Linx Impulse</p>
+      <p>2019</p>
+    </div>
   </footer>
   <script src="script.js"></script>
 </body>

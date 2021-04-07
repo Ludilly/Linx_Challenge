@@ -56,7 +56,30 @@ function moreProductsButton() {
   pageNumberApi += 1;
 }
 
+function validationForm() {
+  const cpf = document.getElementById('cpf');
+  const email = document.getElementById('email');
+
+  const defaultEmail = 'tryber@test.com';
+  const defaultcpf = '12345678900';
+
+  if (cpf.value === defaultcpf && email.value === defaultEmail) {
+    alert('Cadastro realizado com sucesso!');
+  } else {
+    alert('Email ou CPF inválidos');
+  }
+
+  cpf.value = '';
+  email.value = '';
+}
+
+function onClickFormButton() {
+  const loginBtn = document.getElementById('newsletter-button');
+  loginBtn.addEventListener('click', validationForm);
+}
+
 window.onload = function onload() {
   fetchApi();
   moreProductsButton();
+  onClickFormButton();
 };
