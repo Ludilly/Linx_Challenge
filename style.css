@@ -97,7 +97,7 @@ main {
   padding-top: 20px;
 }
 
-.newsletter-form {
+.first-form {
   display: flex;
   flex-direction: column;
   height: 150px;
@@ -107,7 +107,7 @@ main {
   margin-bottom: 60px;
 }
 
-.newsletter-form label {
+.first-form label {
   margin-bottom: -2px;
   padding: 5px;
   text-align: left;
@@ -116,11 +116,11 @@ main {
   color: #888888;
 }
 
-.newsletter-form input, .newsletter-form button {
+.first-form input, .first-form button {
   padding: 5px;
 }
 
-.newsletter-form button {
+.first-form button {
   margin-top: 15px;
   text-align: center;
   font: normal normal normal 16px/16px Helvetica Neue;
@@ -332,7 +332,7 @@ footer:after {
     color: #ffffff;
     opacity: 1;
     margin-top: 66px;
-    width: 100vw;
+    width: 404px;
     margin-left: 16px;
   }
   
@@ -342,8 +342,9 @@ footer:after {
     letter-spacing: 0px;
     color: #ffffff;
     opacity: 1;
-    width: 100vw;
+    width: 404px;
     margin-left: 16px;
+    margin-bottom: 9px;
   }
   
   .header-title3 {
@@ -352,7 +353,8 @@ footer:after {
     letter-spacing: 0px;
     color: #ffffff;
     opacity: 1;
-    margin-left: 10px;
+    width: 404px;
+    margin-left: 16px;
   }
   
  .btn-header {
@@ -371,11 +373,16 @@ footer:after {
    justify-content: space-between;
  }
 
+ .page-title {
+   text-align: left;
+   font: normal normal normal 20px/24px Helvetica Neue;
+ }
+
   .main-content-text {
     width: 386px;
   }
 
-  .newsletter-form {
+  .first-form {
     display: flex;
     flex-direction: column;
   }
