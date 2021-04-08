@@ -31,11 +31,11 @@ header:after {
   position: absolute;
   width: 100%;
   height: 200px;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   background: #707070;
   transform-origin: top left;
-  transform: skewY(5deg);
+  transform: skewY(2.5deg);
   z-index: -1;
 }
 
@@ -64,21 +64,19 @@ header:after {
 }
 
 main h2 {
-  width: 102px;
-  height: 23px;
+  margin-left: 20px;
   text-align: left;
-  font: normal normal normal 20px/24px Helvetica Neue;
+  font: normal normal normal 24px Helvetica Neue;
   letter-spacing: 0px;
   color: #888888;
 }
 
 .container-paragraph {
-  width: 563px;
-  height: 60px;
   text-align: left;
-  font: normal normal normal 12px/18px Helvetica Neue;
+  font: normal normal normal 15px Helvetica Neue;
   letter-spacing: 0px;
   color: #888888;
+  padding: 10px;
 }
 main {
   margin-top: 100px
@@ -92,19 +90,19 @@ main {
 }
 
 .products-session {
-  display: flex;
-  justify-content: center;
-  width: 931px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
 }
 
 .item__image {
   width: 200px;
   height: 150px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
 }
 
 .item__add{
-  width: 201px;
-  height: 350px;
   text-align: center;
   font: normal normal normal 16px/16px Helvetica Neue;
   letter-spacing: 0px;
@@ -135,25 +133,13 @@ strong {
   color: #888888;
 }
 
-.more-products-button button {
+.more-products-button {
   display: flex;
   justify-content: center;
-  margin-top: 49px;
-  margin-bottom: 125px;
-  width: 383px;
-  height: 39px;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  border: 1px solid #707070;
-  border-radius: 4px;
-  text-align: center;
-  align-items: center;
-  font: normal normal normal 16px/16px Helvetica Neue;
-  letter-spacing: 0px;
-  color: #888888;
+  margin-top: 10px;
 }
 
 .more-products-button button {
-  text-align: center;
   font: normal normal normal 16px/16px Helvetica Neue;
   letter-spacing: 0px;
   color: #888888;
@@ -165,7 +151,7 @@ strong {
 .footer {
   color: #ffffff;
   font: normal normal normal 12px/18px Helvetica Neue;
-  height: 158px;
+  height: 120px;
   background: #707070;
   border: 1px solid #707070;
   opacity: 1;
@@ -180,18 +166,23 @@ footer:after {
   position: absolute;
   width: 100%;
   height: 100px;
-  top: -50px;
-  left: 0;
+  top: -75px;
+  left: -1px;
   background: #707070;
   transform-origin: top right;
-  transform: skewY(-1.8deg);
+  transform: skewY(-2.5deg);
   z-index: -1;
 }
 
 .footer-paragraph {
-  margin-top: 135px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
   text-align: center;
-  font: normal normal normal 12px/18px Helvetica Neue;
+  font: normal normal normal 15px Helvetica Neue;
   letter-spacing: 0px;
+  padding: 10px;
   color: #FFFFFF;
 }
