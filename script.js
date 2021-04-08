@@ -18,19 +18,22 @@ function createProductItemElement({
   image, name, description, oldPrice, price, installmentsCount, installmentsValue,
 }) {
   const section = document.createElement('section');
+  const div = document.createElement('div');
+  div.className = 'product-description';
   section.className = 'item';
   section.appendChild(createProductImageElement(image));
-  section.appendChild(createCustomElement('span', 'item__name', name));
-  section.appendChild(createCustomElement('span', 'item__description', description));
-  section.appendChild(createCustomElement('span', 'item__oldPrice', `de: R$${oldPrice}`));
-  section.appendChild(createCustomElement('strong', 'item__price', `POR: R$${price}`));
-  section.appendChild(createCustomElement('span', 'item__nstallmentsCount', `ou ${installmentsCount}x de R$${installmentsValue}`));
+  div.appendChild(createCustomElement('span', 'item__name', name));
+  div.appendChild(createCustomElement('span', 'item__description', description));
+  div.appendChild(createCustomElement('span', 'item__oldPrice', `de: R$${oldPrice}`));
+  div.appendChild(createCustomElement('strong', 'item__price', `POR: R$${price}`));
+  div.appendChild(createCustomElement('span', 'item__nstallmentsCount', `ou ${installmentsCount}x de R$${installmentsValue}`));
   const createBtn = createCustomElement(
     'button',
     'item__add',
     'Comprar',
   );
-  section.appendChild(createBtn);
+  div.appendChild(createBtn);
+  section.appendChild(div);
   return section;
 }
 
