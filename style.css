@@ -14,7 +14,6 @@ body {
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  height: 150px;
   justify-content: center;
   left: 0px;
   opacity: 1;
@@ -62,6 +61,13 @@ header:after {
   opacity: 1;
 }
 
+.btn-header {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  margin-top: 56px;
+}
+
 .header-button {
   background-color: #ffffff;
   color: #888888;
@@ -69,6 +75,7 @@ header:after {
   padding: 12px;
   border-radius: 5px;
   width: 160px;
+  margin-left: 40px;
 }
 
 main {
@@ -383,15 +390,20 @@ footer:after {
   }
 
   .first-form {
-    display: flex;
-    flex-direction: column;
+
+    justify-content: center;
+    width: 385px;
+    margin: 50px auto 60px;
+  }
+
+  .first-form button {
+    width: 385px;
   }
 
   section {
     display: flex;
     flex-direction: column;
   }
-  
   
   .form-horizontal {
     display: flex;
