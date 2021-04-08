@@ -202,6 +202,8 @@ span {
   letter-spacing: 0px;
   color: #888888;
   width: 200px;
+  display: flex;
+  flex-direction: column;
 }
 
 strong {
@@ -367,10 +369,9 @@ footer:after {
  .btn-header {
    display: flex;
    justify-content: space-between;
-   width: 345px;
-   margin: auto;
    flex-wrap: wrap;
    margin-top: 56px;
+   margin-right: 40px;
  }
 
  .btn-container {
