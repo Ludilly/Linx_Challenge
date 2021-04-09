@@ -8,9 +8,9 @@ Esse projeto foi produzido por mim, Luiza Carvalho Dilly D'Angelo como um desafi
 ## Como utilizar a aplicação?
 
 Para verificar a aplicação, foi feito o deploy dos arquivos no Netlify, você pode acessa-los através dos links:
-https://60703b547823232560dc482f--linxchallanger.netlify.app/
+https://quirky-leavitt-c19c4c.netlify.app/
 
-https://60703b547823232560dc482f--linxchallanger.netlify.app/email.html
+https://quirky-leavitt-c19c4c.netlify.app/email
 
 ---
 
